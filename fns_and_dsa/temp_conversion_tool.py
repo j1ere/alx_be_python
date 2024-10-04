@@ -1,7 +1,8 @@
 
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
-CELSIUS_FREEZING_POINT = 32 
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5  
+
+CELSIUS_FREEZING_POINT = 32  
 def convert_to_celsius(fahrenheit):
     global FAHRENHEIT_TO_CELSIUS_FACTOR
     return (fahrenheit - CELSIUS_FREEZING_POINT) * FAHRENHEIT_TO_CELSIUS_FACTOR
@@ -11,9 +12,10 @@ def convert_to_fahrenheit(celsius):
     global CELSIUS_TO_FAHRENHEIT_FACTOR
     return (celsius * CELSIUS_TO_FAHRENHEIT_FACTOR) + CELSIUS_FREEZING_POINT
 
+
 def main():
     try:
-        
+       
         temp = float(input("Enter the temperature to convert: "))
         
         unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
