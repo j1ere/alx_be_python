@@ -1,8 +1,5 @@
-# shopping_list_manager.py
-
 def display_menu():
-    # Use f-string format for the required print statement
-    print(f"\nShopping List Manager")
+    print("Shopping List Manager")
     print("1. Add Item")
     print("2. Remove Item")
     print("3. View List")
