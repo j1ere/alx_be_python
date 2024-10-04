@@ -1,6 +1,5 @@
-CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 FAHRENHEIT_TO_CELSIUS_FACTOR = 5 / 9
-
+CELSIUS_TO_FAHRENHEIT_FACTOR = 9 / 5
 FREEZING_POINT_FAHRENHEIT = 32
 
 def convert_to_celsius(fahrenheit):
@@ -13,12 +12,9 @@ def convert_to_fahrenheit(celsius):
 
 def main():
     try:
-        
         temp = float(input("Enter the temperature to convert: "))
-        
         unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").strip().upper()
 
-        # Perform conversion based on the user's input
         if unit == 'F':
             result = convert_to_celsius(temp)
             print(f"{temp}°F is {result:.2f}°C")
