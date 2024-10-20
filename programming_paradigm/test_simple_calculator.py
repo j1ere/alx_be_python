@@ -26,20 +26,15 @@ class SimpleCalculatorTests(unittest.TestCase):
         self.assertEqual(self.calc.multiply(1, -1), -1)
         self.assertEqual(self.calc.multiply(-1,-1), 1)
     
-    def test_zero_division(self):
-        """test that dividing by zero returns None"""
-        self.assertEqual(self.calc.divide(10,0), None)
-        self.assertEqual(self.calc.divide(-10, 0), None)
-
-    def test_normal_division(self):
+    def test_division(self):
         """testing for normal division"""
         self.assertEqual(self.calc.divide(4,2), 2)
         self.assertEqual(self.calc.divide(-4,2), -2)
         self.assertEqual(self.calc.divide(4,-2), -2)
-
-    
-
-    
+        """test that dividing by zero returns None"""
+        self.assertEqual(self.calc.divide(10,0), None)
+        self.assertEqual(self.calc.divide(-10, 0), None)
+   
 
 if __name__ == "__main__":
     unittest.main()
